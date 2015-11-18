@@ -23,7 +23,14 @@ body{
 	}
 	.navigations{
 		li{
-			margin-right: 30px;
+			a{
+				padding:0 20px;
+				display: block;
+				&:hover{
+					background-color: @main-bg-color;
+					color: #ffffff;
+				}
+			}
 		}
 	}
 }
@@ -31,6 +38,12 @@ body{
 .banner{
 	min-height: 320px;
     background: #eaeaea url("../images/banner-bg.png");
+	.banner-wrap{
+		width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+	}
     .banner-bg-left{
     	height: 320px;
 	    width: 160px;
@@ -50,12 +63,142 @@ body{
     	max-width: 670px;
     	max-height: 320px;
     	overflow: hidden;
+		position: relative;
+		.banner-slogan{
+			position: absolute;
+			font-size: 20px;
+			padding: 10px 15px;
+			background-color: #000;
+			color: #ffffff;
+			opacity: 0.8;
+			bottom: 60px;
+			left: 80px;
+		}
     }
     .login-box{
     	width: 290px;
     	min-height: 320px;
-    	background-color: @main-color;
     	float: left;
+		position: relative;
+		.login-opacity{
+			position: absolute;
+			width:100%;
+			top: 0;
+			bottom:0;
+			opacity: 0.4;
+			filter: alpha(opacity=40);
+			-moz-opacity: 0.4;
+			-khtml-opacity: 0.4;
+			background-color: #000000;
+		}
+		.login-box-wrap{
+			z-index: 10;
+			width:250px;
+			padding: 10px 20px;
+			position: relative;
+			.login-header{
+				border-bottom: 1px solid #eee;
+				.login-header-tab{
+					width: 80px;
+					color: #ffffff;
+					border-bottom: 2px solid dodgerblue;
+					margin-bottom:-1px;
+					text-align: center;
+					padding: 10px 0;
+				}
+			}
+			.login-form{
+				margin-top: 10px;
+				.login-input-wrap{
+					padding: 5px 0;
+					border: 1px solid transparent;
+					border-radius: 2px;
+					background-color: #FFF;
+					margin-bottom: 10px;
+					background-image: url(../images/sprite_login.png);
+					background-repeat: no-repeat;
+					background-color: #FFFFFF;
+					&.loginid{
+						background-position: 11px 12px;
+					}
+					&.passwd,&.authcode {
+						background-position: -38px 12px
+					}
+					input{
+						margin-left: 34px;
+						width: 200px;
+						border: none;
+						box-shadow: none;
+						height: 28px;
+						line-height: normal;
+						&:active, &:focus{
+							border: none;
+						}
+					}
+					&.authcode{
+						width: 150px;
+						float: left;
+						margin-right: 10px;
+						input{
+							width: 100px;
+						}
+						#img_data{
+							float: left;
+						}
+					}
+				}
+				.login-button{
+					padding: 0 10px 0 10px;
+					white-space: nowrap;
+					display: inline-block;
+					border-radius: 2px;
+					height: 24px;
+					line-height: 25px;
+					text-decoration: none;
+					min-width: 40px;
+					text-align: center;
+					outline: none;
+					background: #489cff;
+					border: 1px solid #489cff;
+					width: 250px;
+					font-size: 16px;
+					height: 38px;
+					line-height: 38px;
+					cursor: pointer;
+					color: #fff;
+					box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+					&:hover{
+						background: #3a8bff;
+						border: 1px solid #3a8bff;
+					}
+				}
+				.register-button{
+					padding: 0 10px;
+					white-space: nowrap;
+					display: inline-block;
+					border-radius: 2px;
+					height: 24px;
+					line-height: 25px;
+					text-decoration: none;
+					min-width: 40px;
+					text-align: center;
+					outline: none;
+					background: #ffffff;
+					border: 1px solid #dddddd;
+					width: 228px;
+					margin-top: 10px;
+					font-size: 16px;
+					height: 38px;
+					line-height: 38px;
+					cursor: pointer;
+					color: #333;
+					box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+					&:hover{
+						background-color: rgb(230,230,230);
+					}
+				}
+			}
+		}
     }
 }
 
@@ -78,40 +221,58 @@ body{
 		margin: 0 20px;
 		width: 420px;
 		float: left;
-		margin-right: 20px;
-		.block-title-inner{
-			border-bottom: 2px solid #1e7acd;
-		}
+		margin-right: 10px;
 		.news-list{
 			li{
-				padding: 5px 0;
-				border-bottom: 1px solid #e0e0e0;
+				line-height: 18px;
+				font-size: 14px;
+				margin-bottom: 18px;
+				overflow: hidden;
 				a{
 					color: #666;
 					font-size: 13px;
+					&:hover{
+						color: #1e7acd;
+					}
 				}
 				.news-time{
-					float: right;
-					color:#999;
+					i{
+						font-size: 18px;
+						font-style: normal;
+					}
+					color:#1e7acd;
 					font-size: 13px;
+					font-family: Georgia;
+					width: 110px;
+					display: block;
+					float: left;
+					color: #1e7acd;
+					background: url(../images/line.jpg) no-repeat right center;
+					overflow: hidden;
+					margin-right: 18px;
+					height: 36px;
+					line-height: 36px;
 				}
 			}
 		}
 	}
 	.project{
 		margin: 0 20px;
-		width: 420px;
+		width: 430px;
 		float: left;
 		.block-title-inner{
 			border-bottom: 2px solid #1e7acd;
 		}
 		.project-list{
 			li{
-				padding: 5px 0;
+				padding: 10px 0;
 				border-bottom: 1px solid #e0e0e0;
 				a{
 					color: #666;
 					font-size: 13px;
+					&:hover{
+						color: #1e7acd;
+					}
 				}
 				.project-time{
 					float: right;
@@ -119,14 +280,43 @@ body{
 					font-size: 13px;
 				}
 			}
-		}				
+			.project-with-image{
+				border-bottom: none;
+				width: 410px;
+				height: 140px;
+				overflow: hidden;
+				padding: 0;
+				img{
+					float: left;
+					margin-right: 10px;
+				}
+				.project-wi-title{
+					font-size: 15px;
+				}
+				.project-wi-detail{
+					font-size: 12px;
+					line-height: 16px;
+					margin-top: 10px;
+				}
+
+			}
+		}
 	}
 
 }
 
-.footer{
-	text-align: center;
+.refer{
 	margin-top: 30px;
+	padding: 20px 0;
+	text-align: center;
+	background: #f2f2f2 url('../images/link-list-bg.png') repeat-x;
+}
+
+.footer{
+	.footer-refer{
+		margin-bottom: 10px;
+	}
+	text-align: center;
 	background-color: @main-bg-color;
 	padding: 20px 0;
     position: relative;
