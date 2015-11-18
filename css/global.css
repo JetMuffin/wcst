@@ -1,0 +1,58 @@
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #1e7acd;
+}
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 960px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.navigations li {
+  float: left;
+}
+.block .block-title {
+  font-family: "Microsoft Yahei";
+  border-bottom: 2px solid #ddd;
+  display: block;
+}
+.block .block-title-inner {
+  padding: 5px 7px 5px;
+  display: inline-block;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: -2px;
+}
+.block .block-content {
+  padding: 10px;
+}
+.block .more {
+  margin-top: 10px;
+  float: right;
+  font-size: 14px;
+}
+.block .more a {
+  color: #2E506F;
+}
+.clearfix {
+  clear: both;
+}
