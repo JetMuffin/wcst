@@ -33,7 +33,7 @@ li {
 }
 .block .block-title {
   font-family: "Microsoft Yahei";
-  border-bottom: 2px solid #1e7acd;
+  border-bottom: 2px solid #ddd;
   display: block;
 }
 .block .block-title-inner {
@@ -50,11 +50,11 @@ li {
   float: right;
   font-size: 14px;
 }
+.block .more a {
+  font-weight: bold;
+}
 .clearfix {
   clear: both;
-}
-body {
-  background-color: #eaeaea;
 }
 .header {
   min-height: 35px;
@@ -80,7 +80,6 @@ body {
 }
 .banner {
   min-height: 320px;
-  background: #eaeaea url("../images/banner-bg.png");
 }
 .banner .banner-wrap {
   width: 1100px;
@@ -91,14 +90,12 @@ body {
 .banner .banner-bg-left {
   height: 320px;
   width: 160px;
-  background: url("../images/banner-bg-shadow-left.png") no-repeat;
   position: absolute;
   left: -160px;
 }
 .banner .banner-bg-right {
   height: 320px;
   width: 160px;
-  background: url("../images/banner-bg-shadow-right.png") no-repeat;
   position: absolute;
   right: -160px;
 }
@@ -268,32 +265,25 @@ body {
 .main .news .news-list li {
   line-height: 18px;
   font-size: 14px;
-  margin-bottom: 18px;
   overflow: hidden;
 }
 .main .news .news-list li a {
-  color: #666;
+  color: #333;
   font-size: 13px;
+  max-width: 300px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
 }
 .main .news .news-list li a:hover {
   color: #1e7acd;
 }
 .main .news .news-list li .news-time {
+  float: right;
+  color: #999;
   font-size: 13px;
-  font-family: Georgia;
-  width: 110px;
-  display: block;
-  float: left;
-  color: #1e7acd;
-  background: url(../images/line.jpg) no-repeat right center;
-  overflow: hidden;
-  margin-right: 18px;
-  height: 36px;
-  line-height: 36px;
-}
-.main .news .news-list li .news-time i {
-  font-size: 18px;
-  font-style: normal;
 }
 .main .project {
   margin: 0 20px;
@@ -303,13 +293,15 @@ body {
 .main .project .block-title-inner {
   border-bottom: 2px solid #1e7acd;
 }
-.main .project .project-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0;
-}
 .main .project .project-list li a {
-  color: #666;
+  color: #333;
   font-size: 13px;
+  max-width: 300px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
 }
 .main .project .project-list li a:hover {
   color: #1e7acd;
@@ -318,25 +310,6 @@ body {
   float: right;
   color: #999;
   font-size: 13px;
-}
-.main .project .project-list .project-with-image {
-  border-bottom: none;
-  width: 410px;
-  height: 140px;
-  overflow: hidden;
-  padding: 0;
-}
-.main .project .project-list .project-with-image img {
-  float: left;
-  margin-right: 10px;
-}
-.main .project .project-list .project-with-image .project-wi-title {
-  font-size: 15px;
-}
-.main .project .project-list .project-with-image .project-wi-detail {
-  font-size: 12px;
-  line-height: 16px;
-  margin-top: 10px;
 }
 .refer {
   margin-top: 30px;

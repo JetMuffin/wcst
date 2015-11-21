@@ -4,7 +4,7 @@
 @main-bg-color: #203d53;
 
 body{
-	background-color:#eaeaea;
+	// background-color:#eaeaea;
 }
 
 .header{
@@ -37,7 +37,7 @@ body{
 
 .banner{
 	min-height: 320px;
-    background: #eaeaea url("../images/banner-bg.png");
+    // background: #eaeaea url("../images/banner-bg.png");
 	.banner-wrap{
 		width: 1100px;
 		margin-left: auto;
@@ -47,14 +47,14 @@ body{
     .banner-bg-left{
     	height: 320px;
 	    width: 160px;
-	    background: url("../images/banner-bg-shadow-left.png") no-repeat;
+	    // background: url("../images/banner-bg-shadow-left.png") no-repeat;
 	    position: absolute;
 	    left: -160px;
     }
     .banner-bg-right{
     	height: 320px;
 	    width: 160px;
-	    background: url("../images/banner-bg-shadow-right.png") no-repeat;
+	    // background: url("../images/banner-bg-shadow-right.png") no-repeat;
 	    position: absolute;
 	    right: -160px;
     }    
@@ -226,32 +226,25 @@ body{
 			li{
 				line-height: 18px;
 				font-size: 14px;
-				margin-bottom: 18px;
 				overflow: hidden;
 				a{
-					color: #666;
+					color: #333;
 					font-size: 13px;
+				    max-width: 300px;
+				    margin-bottom: 5px;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    display: inline-block;
 					&:hover{
 						color: #1e7acd;
 					}
 				}
+
 				.news-time{
-					i{
-						font-size: 18px;
-						font-style: normal;
-					}
-					color:#1e7acd;
+					float: right;
+					color:#999;
 					font-size: 13px;
-					font-family: Georgia;
-					width: 110px;
-					display: block;
-					float: left;
-					color: #1e7acd;
-					background: url(../images/line.jpg) no-repeat right center;
-					overflow: hidden;
-					margin-right: 18px;
-					height: 36px;
-					line-height: 36px;
 				}
 			}
 		}
@@ -265,11 +258,15 @@ body{
 		}
 		.project-list{
 			li{
-				padding: 10px 0;
-				border-bottom: 1px solid #e0e0e0;
 				a{
-					color: #666;
+					color: #333;
 					font-size: 13px;
+				    max-width: 300px;
+				    margin-bottom: 5px;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    display: inline-block;
 					&:hover{
 						color: #1e7acd;
 					}
@@ -279,26 +276,6 @@ body{
 					color:#999;
 					font-size: 13px;
 				}
-			}
-			.project-with-image{
-				border-bottom: none;
-				width: 410px;
-				height: 140px;
-				overflow: hidden;
-				padding: 0;
-				img{
-					float: left;
-					margin-right: 10px;
-				}
-				.project-wi-title{
-					font-size: 15px;
-				}
-				.project-wi-detail{
-					font-size: 12px;
-					line-height: 16px;
-					margin-top: 10px;
-				}
-
 			}
 		}
 	}

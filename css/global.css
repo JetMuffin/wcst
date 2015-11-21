@@ -33,7 +33,7 @@ li {
 }
 .block .block-title {
   font-family: "Microsoft Yahei";
-  border-bottom: 2px solid #1e7acd;
+  border-bottom: 2px solid #ddd;
   display: block;
 }
 .block .block-title-inner {
@@ -49,6 +49,9 @@ li {
   margin-top: 10px;
   float: right;
   font-size: 14px;
+}
+.block .more a {
+  font-weight: bold;
 }
 .clearfix {
   clear: both;
