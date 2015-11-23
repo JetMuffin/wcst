@@ -237,6 +237,9 @@ li {
 .banner .login-box .login-box-wrap .login-form .register-button:hover {
   background-color: #f0f0f0;
 }
+.main {
+  min-height: 380px;
+}
 .main .container {
   background-color: #fff;
   padding: 20px 0;
