@@ -119,11 +119,11 @@ li {
   left: 30px;
 }
 .banner .login-box {
-  width: 290px;
+  width: 285px;
   min-height: 300px;
   float: left;
   position: relative;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .banner .login-box .login-opacity {
   position: absolute;
@@ -164,7 +164,7 @@ li {
   border: 1px solid #aaa;
 }
 .banner .login-box .login-box-wrap .login-form input {
-  width: 220px;
+  width: 215px;
   padding: 0 0 0 30px !important;
   border: none;
   box-shadow: none;
@@ -194,7 +194,6 @@ li {
   padding: 0 10px 0 10px;
   white-space: nowrap;
   display: inline-block;
-  border-radius: 2px;
   height: 24px;
   line-height: 25px;
   text-decoration: none;
@@ -202,7 +201,7 @@ li {
   text-align: center;
   outline: none;
   background: #489cff;
-  border: 1px solid #489cff;
+  border: 1px solid #4b65bb;
   width: 250px;
   font-size: 16px;
   height: 38px;
@@ -212,14 +211,13 @@ li {
 }
 .banner .login-box .login-box-wrap .login-form .login-button:hover {
   background: #3a8bff;
-  border: 1px solid #3a8bff;
+  border: 1px solid #4b65bb;
 }
 .banner .login-box .login-box-wrap .login-form .register-button {
   font-family: "Microsoft Yahei";
   padding: 0 10px;
   white-space: nowrap;
   display: inline-block;
-  border-radius: 2px;
   height: 24px;
   line-height: 25px;
   text-decoration: none;
@@ -227,7 +225,7 @@ li {
   text-align: center;
   outline: none;
   background: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #cccccc;
   width: 228px;
   margin-top: 10px;
   font-size: 16px;
