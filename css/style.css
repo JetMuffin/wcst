@@ -22,7 +22,7 @@ li {
   list-style: none;
 }
 .container {
-  width: 960px;
+  width: 920px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -57,8 +57,8 @@ li {
 .clearfix {
   clear: both;
 }
-.header {
-  min-height: 35px;
+.header .header-top {
+  height: 30px;
   background-color: #203d53;
 }
 .navi {
@@ -79,9 +79,11 @@ li {
   background-color: #203d53;
   color: #ffffff;
 }
+#refer {
+  margin-bottom: -2px;
+}
 .banner {
-  min-height: 300px;
-  margin-top: 10px;
+  margin-top: 10px ;
 }
 .banner .banner-wrap {
   width: 1100px;
@@ -106,68 +108,64 @@ li {
 }
 .banner .banner-image {
   float: left;
-  max-width: 650px;
-  max-height: 300px;
+  max-height: 240px;
   overflow: hidden;
   position: relative;
+  background-image: url(../images/banner-7.png);
+  background-position: -115px -31px;
+  width: 920px;
 }
 .banner .banner-image .banner-slogan {
   position: absolute;
-  font-size: 20px;
-  padding: 10px 15px;
-  bottom: 15px;
-  left: 30px;
+  color: #ffffff;
+  font-family: "Microsoft Yahei";
+  font-size: 28px;
+  bottom: 95px;
+  left: 400px;
 }
 .banner .login-box {
-  width: 285px;
-  min-height: 300px;
-  float: left;
+  width: 220px;
+  background-color: #fafafa;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  float: right;
+  margin: 10px;
+  border-radius: 3px;
   position: relative;
-  margin-left: 15px;
-}
-.banner .login-box .login-opacity {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  background-color: #ebebeb;
 }
 .banner .login-box .login-box-wrap {
   z-index: 10;
   width: 250px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   position: relative;
 }
 .banner .login-box .login-box-wrap .login-header {
-  border-bottom: 1px solid #eee;
   font-family: "Microsoft Yahei";
 }
 .banner .login-box .login-box-wrap .login-header .login-header-tab {
-  width: 80px;
   color: #333;
-  font-size: 25px;
-  width: 100%;
-  text-align: center;
-  padding: 5px 0;
+  font-size: 16px;
 }
 .banner .login-box .login-box-wrap .login-form {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .banner .login-box .login-box-wrap .login-form .form-item {
   margin-bottom: 10px;
 }
 .banner .login-box .login-box-wrap .login-form .form-item .form-control {
-  height: 32px;
-  line-height: 32px;
+  height: 28px;
+  line-height: 28px;
   font-size: 14px;
   padding: 0 10px;
   border: 1px solid #aaa;
 }
+.banner .login-box .login-box-wrap .login-form .form-item.auth-item {
+  margin-bottom: 0;
+}
 .banner .login-box .login-box-wrap .login-form input {
-  width: 215px;
-  padding: 0 0 0 30px !important;
+  padding: 0 0 0 25px !important;
   border: none;
   box-shadow: none;
+  width: 160px;
   height: 28px;
   line-height: normal;
   background-image: url("../images/sprite_login.png");
@@ -178,20 +176,20 @@ li {
   border: none;
 }
 .banner .login-box .login-box-wrap .login-form input#loginId {
-  background-position: 0 8px;
+  background-position: 0 6px;
 }
 .banner .login-box .login-box-wrap .login-form input#pwd {
-  background-position: 0 -21px;
+  background-position: 0 -23px;
 }
 .banner .login-box .login-box-wrap .login-form input#authCode {
-  width: 120px;
-  background-position: 0 -21px;
+  width: 90px;
+  background-position: 0 -23px;
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
 }
-.banner .login-box .login-box-wrap .login-form .login-button {
+.banner .login-box .login-box-wrap .login-form .form-button {
   font-family: "Microsoft Yahei";
-  padding: 0 10px 0 10px;
+  padding: 0 7px 0 10px;
   white-space: nowrap;
   display: inline-block;
   height: 24px;
@@ -200,49 +198,36 @@ li {
   min-width: 40px;
   text-align: center;
   outline: none;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.banner .login-box .login-box-wrap .login-form .login-button {
   background: #489cff;
   border: 1px solid #4b65bb;
-  width: 250px;
-  font-size: 16px;
-  height: 38px;
-  line-height: 38px;
-  cursor: pointer;
   color: #fff;
+  width: 90px;
+  margin-right: 5px;
 }
 .banner .login-box .login-box-wrap .login-form .login-button:hover {
   background: #3a8bff;
   border: 1px solid #4b65bb;
 }
 .banner .login-box .login-box-wrap .login-form .register-button {
-  font-family: "Microsoft Yahei";
-  padding: 0 10px;
-  white-space: nowrap;
-  display: inline-block;
-  height: 24px;
-  line-height: 25px;
-  text-decoration: none;
-  min-width: 40px;
-  text-align: center;
-  outline: none;
   background: #ffffff;
   border: 1px solid #cccccc;
-  width: 228px;
-  margin-top: 10px;
-  font-size: 16px;
-  height: 38px;
-  line-height: 38px;
-  cursor: pointer;
   color: #333;
+  width: 90px;
 }
 .banner .login-box .login-box-wrap .login-form .register-button:hover {
   background-color: #f0f0f0;
 }
-.main {
-  min-height: 380px;
-}
 .main .container {
-  background-color: #fff;
+  background-color: #f7f7f7;
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 .main .main-bg {
   width: 100%;
@@ -255,7 +240,7 @@ li {
 }
 .main .news {
   margin: 0 20px;
-  width: 440px;
+  width: 420px;
   float: left;
   margin-right: 10px;
 }
@@ -284,7 +269,7 @@ li {
 }
 .main .project {
   margin: 0 20px;
-  width: 440px;
+  width: 420px;
   float: left;
 }
 .main .project .block-title-inner {

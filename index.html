@@ -6,52 +6,52 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="index">
-	<div class="header">
+	<div class="header" id="header">
+		<div class="header-top"></div>
+		<div class="container">
 
+		</div>
 	</div>
-	<div class="banner">
+	<div class="banner" id="banner">
 		<div class="banner-wrap">
 			<div class="container">
-				<div class="banner-bg-left"></div>
-				<div class="banner-bg-right"></div>
 				<div class="banner-main">
+					<img src="images/banner-3.jpg" width="720" alt="" id="refer">
 					<div class="banner-image">
-						<img src="images/banner-3.jpg" width="670" alt="">
-						<img src="images/banner-6.png" width="670" alt="" class="banner-main">
 						<div class="banner-slogan">
-							<img src="images/logo-2.png" alt="">
+							水利安全培训网
+						</div>
+						<div class="login-box">
+							<div class="login-box-wrap">
+								<div class="login-header">
+									<div class="login-header-tab">用户登录</div>
+								</div>
+								<div class="login-form">
+									<form action="">
+										<div class="form-item">
+											<input type="text" id="loginId" name="loginId" class="form-control" placeholder="请输入账号">
+										</div>
+										<div class="form-item">
+											<input type="password" id="pwd" name="passwd" class="form-control" placeholder="请输入密码">
+										</div>
+										<div class="form-item auth-item">
+											<input type="password" id="authCode" name="authCode" class="form-control" placeholder="请输入验证码">
+											<img id="img_data" title="" alt="看不清楚，点击切换！" width="65px" height="30px" src="http://slpx.hhu.edu.cn/sso/authimg" style="margin-bottom: -2px; cursor: pointer;">
+										</div>
+										<div class="clearfix"></div>
+										<button type="submit" class="login-button form-button">登录</button>
+										<button href="" class="register-button form-button">注册</button>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="login-box">
-						<div class="login-opacity"></div>
-						<div class="login-box-wrap">
-							<div class="login-header">
-								<div class="login-header-tab">登录</div>
-							</div>
-							<div class="login-form">
-								<form action="">
-									<div class="form-item">
-										<input type="text" id="loginId" name="loginId" class="form-control" placeholder="请输入账号">
-									</div>
-									<div class="form-item">
-										<input type="password" id="pwd" name="passwd" class="form-control" placeholder="请输入密码">
-									</div>
-									<div class="form-item">
-										<input type="password" id="authCode" name="authCode" class="form-control" placeholder="请输入验证码">
-										<img id="img_data" title="" alt="看不清楚，点击切换！" width="85px" height="33px" src="http://slpx.hhu.edu.cn/sso/authimg" style="margin-bottom: -2px; cursor: pointer;">
-									</div>
-									<div class="clearfix"></div>
-									<button type="submit" class="login-button">登录</button>
-									<a href="" class="register-button">注册</a>
-								</form>
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="main">
+	<div class="main" id="main">
 		<div class="container">
 			<div class="news block">
 				<div class="block-title">
@@ -94,7 +94,7 @@
 	<!--<div class="refer">-->
 
 	<!--</div>-->
-	<div class="footer">
+	<div class="footer" id="footer">
 		<div class="footer-info">
 			<div class="about">
 				<p>地址：江苏省南京市西康路1号 邮编：210098 办公室电话：025-83788362 技术咨询电话: 025-83787318</p>
@@ -106,4 +106,27 @@
 		<div class="clearfix"></div>
 	</div>
 </body>
+<script src="javascripts/jquery.min.js"></script>
+<script>
+
+	window.onload=window.onresize=function(){
+		resizeWindow();
+//		var main = document.getElementById("main");
+//		var banner = document.getElementById("header");
+//		var footer = document.getElementById("footer");
+//		var header = document.getElementById("header")
+////		main.style.height = height - banner.offsetHeight - footer.offsetHeight - header.offsetHeight;
+//		console.log(main);
+//		main.style.height = height;
+	}
+
+	function resizeWindow(){
+
+		var height = $(window).height();
+		console.log(height);
+		var new_height = height-382;
+		$("#main").css("min-height",new_height);
+	}
+
+</script>
 </html>
