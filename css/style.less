@@ -10,39 +10,25 @@ body{
 .header{
 	//background-color: @main-bg-color;
 	.header-top{
-		height: 30px;
-		background-color: @main-bg-color;
+		height: 15px;
+		background-color: rgb(31,61,83);
+	}
+	.header-bottom{
+		height: 55px;
+		background-image: url(../images/header-bg.png);
+	}
+	.logo{
+		margin-top: 15px;
 	}
 }
 
-.navi{
-	height: 60px;
-	line-height: 60px;
-	background-color: #fff;
-	font-family: "Microsoft Yahei";
-	.logo{
-		float: left;
-		margin-right: 80px;
-	}
-	.navigations{
-		li{
-			a{
-				padding:0 20px;
-				display: block;
-				&:hover{
-					background-color: @main-bg-color;
-					color: #ffffff;
-				}
-			}
-		}
-	}
-}
 #refer{
 	margin-bottom: -2px;
 }
 .banner{
-    // background: #eaeaea url("../images/banner-bg.png");
-	margin-top:10px ;
+	&.index{
+		background: url(../images/main-bg.png) repeat-x #ffffff;
+	}
 	.banner-wrap{
 		width: 1100px;
 		margin-left: auto;
@@ -64,54 +50,49 @@ body{
 	    right: -160px;
     }
 	.banner-main{
-		margin-top: -2px;
+		background: #ffffff;
 	}
     .banner-image{
     	float: left;
-    	height: 220px;
-
+    	height: 246px;
     	overflow: hidden;
 		position: relative;
-		background-image: url(../images/banner-7.png);
-		background-position: -115px -31px;
-		width: 920px;
-		.banner-slogan{
-			position: absolute;
-			color: #ffffff;
-			font-family: "Microsoft Yahei";
-			font-size: 28px;
-			//padding: 10px 15px;
-			bottom: 95px;
-			left:400px;;
-		}
+		background-image: url(../images/banner.png);
+		width: 648px;
+
     }
+	.banner-image-with-text{
+		width: 920px;
+		background-image: url(../images/banner-with-text.png);
+		height: 170px;
+	}
     .login-box{
-    	width: 220px;
-		background-color: rgb(250,250,250);
-		box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-    	float: right;
-		margin: 10px;
-		border-radius: 3px;
+    	width: 260px;
+		height: 246px;
+		background-color: rgb(235,235,235);
+    	float: left;
+		margin-left: 10px;
 		position: relative;
 		.login-box-wrap{
 			z-index: 10;
-			width:250px;
 			padding: 10px 15px;
 			position: relative;
 			.login-header{
 				font-family: "Microsoft Yahei";
 				.login-header-tab{
 					color: #333;
-					font-size: 16px;
+					font-size: 22px;
+					padding: 5px 0;
+					text-align: center;
 				}
 			}
 			.login-form{
 				margin-top: 7px;
 				.form-item{
-					margin-bottom: 10px;
+					margin-bottom: 13px;
 					.form-control{
-						height: 28px;
-						line-height: 28px;
+						height: 32px;
+						line-height: 32px;
 						font-size: 14px;
 						padding: 0 10px;
 						border: 1px solid #aaa;
@@ -124,8 +105,8 @@ body{
 					padding: 0 0 0 25px !important;
 					border: none;
 					box-shadow: none;
-					width: 160px;
-					height: 28px;
+					width: 202px;
+					height: 32px;
 					line-height: normal;
 					background-image: url("../images/sprite_login.png");
 					background-repeat: no-repeat;
@@ -139,7 +120,7 @@ body{
 						background-position: 0 -23px;
 					}
 					&#authCode{
-						width: 90px;
+						width: 130px;
 						background-position: 0 -23px;
 						float: left;
 						margin-right: 5px;
@@ -156,17 +137,17 @@ body{
 					min-width: 40px;
 					text-align: center;
 					outline: none;
-					height: 34px;
-					line-height: 34px;
+					height: 36px;
+					line-height: 36px;
 					font-size: 16px;
 					cursor: pointer;
-					margin-top: 10px;
+					margin-top: 15px;
 				}
 				.login-button{
 					background: #489cff;
 					border: 1px solid #4b65bb;
 					color: #fff;
-					width: 90px;
+					width: 110px;
 					margin-right: 5px;
 					&:hover{
 						background: #3a8bff;
@@ -177,7 +158,7 @@ body{
 					background: #ffffff;
 					border: 1px solid #cccccc;
 					color: #333;
-					width: 90px;
+					width: 110px;
 					&:hover{
 						background-color: rgb(240,240,240);
 					}
@@ -188,10 +169,10 @@ body{
 }
 
 .main{
+
 	.container{
-		background-color: #f9f9f9;
+		background-color: #ffffff;
 		padding: 20px 0;
-		margin-bottom: 20px;
 	}
 	.main-bg{
 		    width: 100%;
@@ -216,7 +197,7 @@ body{
 				a{
 					color: #333;
 					font-size: 13px;
-				    max-width: 300px;
+				    max-width: 320px;
 				    margin-bottom: 5px;
 				    overflow: hidden;
 				    text-overflow: ellipsis;
@@ -290,6 +271,11 @@ body{
 		.main-right{
 			width: 860px;
 		}
+		.container{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			background-color: rgb(245,245,245);
+		}
 	}
 	&.list{
 		.main-left{
@@ -297,6 +283,12 @@ body{
 		}
 		.main-right{
 			width: 860px;
+
+		}
+		.container{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			background-color: rgb(245,245,245);
 		}
 	}
 }
@@ -341,12 +333,15 @@ body{
 	background-repeat: no-repeat;
 }
 .breadcrumb{
+	margin-bottom: -7px;
 	ul{
 		li{
 			float: left;
 			a{
-				color: #999;
-				font-size: 12px;
+				color: #094359;
+				font-size: 14px;
+				font-weight: bold;
+				font-family: "Adobe Heiti Std";
 				&:hover{
 					color: @main-bg-color;
 				}
@@ -354,24 +349,65 @@ body{
 		}
 	}
 }
-.refer{
-	margin-top: 30px;
-	padding: 20px 0;
-	text-align: center;
-	background: #f2f2f2 url('../images/link-list-bg.png') repeat-x;
-}
 
 .footer{
-	.footer-refer{
-		margin-bottom: 10px;
+	.footer-depart{
+		float: left;
+		width: 300px;
+		ul.depart-list{
+			width: 200px;
+			li{
+				strong{
+					font-family: "Adobe Heiti Std";
+					margin-right: 15px;
+					font-size: 14px;
+				}
+				font-size: 13px;
+				border-bottom: 2px solid rgb(92,104,112);
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+		}
+
 	}
-	text-align: center;
-	background-color: @main-bg-color;
-	padding: 20px 0;
+
+	.footer-links{
+		float: right;
+		width: 450px;
+		.links-title{
+			font-size: 14px;
+			font-weight: bold;
+			padding: 7px 0;
+			border-bottom: 2px solid rgb(92,104,112);
+		}
+		.links-list{
+			padding: 5px 0 ;
+			li{
+				float: left;
+				a{
+					display: inline-block;
+					width: 120px;
+					font-size: 13px;
+					color: #b8b8b9;
+					padding: 5px 10px;
+					&.long{
+						width: 180px;
+					}
+				}
+			}
+		}
+	}
+	background-color: #4e5c66;
+	padding: 20px 0 10px 0;
     position: relative;
-    color: #879bab;
+    color: #b8b8b9;
     font-size: 12px;
 	p{
 		padding: 5px;
+	}
+	.footer-info{
+		margin: 10px 0 0 0;
+		text-align: center;
 	}
 }

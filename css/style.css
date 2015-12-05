@@ -58,32 +58,21 @@ li {
   clear: both;
 }
 .header .header-top {
-  height: 30px;
-  background-color: #203d53;
+  height: 15px;
+  background-color: #1f3d53;
 }
-.navi {
-  height: 60px;
-  line-height: 60px;
-  background-color: #fff;
-  font-family: "Microsoft Yahei";
+.header .header-bottom {
+  height: 55px;
+  background-image: url(../images/header-bg.png);
 }
-.navi .logo {
-  float: left;
-  margin-right: 80px;
-}
-.navi .navigations li a {
-  padding: 0 20px;
-  display: block;
-}
-.navi .navigations li a:hover {
-  background-color: #203d53;
-  color: #ffffff;
+.header .logo {
+  margin-top: 15px;
 }
 #refer {
   margin-bottom: -2px;
 }
-.banner {
-  margin-top: 10px ;
+.banner.index {
+  background: url(../images/main-bg.png) repeat-x #ffffff;
 }
 .banner .banner-wrap {
   width: 1100px;
@@ -104,37 +93,31 @@ li {
   right: -160px;
 }
 .banner .banner-main {
-  margin-top: -2px;
+  background: #ffffff;
 }
 .banner .banner-image {
   float: left;
-  height: 220px;
+  height: 246px;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/banner-7.png);
-  background-position: -115px -31px;
-  width: 920px;
+  background-image: url(../images/banner.png);
+  width: 648px;
 }
-.banner .banner-image .banner-slogan {
-  position: absolute;
-  color: #ffffff;
-  font-family: "Microsoft Yahei";
-  font-size: 28px;
-  bottom: 95px;
-  left: 400px;
+.banner .banner-image-with-text {
+  width: 920px;
+  background-image: url(../images/banner-with-text.png);
+  height: 170px;
 }
 .banner .login-box {
-  width: 220px;
-  background-color: #fafafa;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  float: right;
-  margin: 10px;
-  border-radius: 3px;
+  width: 260px;
+  height: 246px;
+  background-color: #ebebeb;
+  float: left;
+  margin-left: 10px;
   position: relative;
 }
 .banner .login-box .login-box-wrap {
   z-index: 10;
-  width: 250px;
   padding: 10px 15px;
   position: relative;
 }
@@ -143,17 +126,19 @@ li {
 }
 .banner .login-box .login-box-wrap .login-header .login-header-tab {
   color: #333;
-  font-size: 16px;
+  font-size: 22px;
+  padding: 5px 0;
+  text-align: center;
 }
 .banner .login-box .login-box-wrap .login-form {
   margin-top: 7px;
 }
 .banner .login-box .login-box-wrap .login-form .form-item {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 .banner .login-box .login-box-wrap .login-form .form-item .form-control {
-  height: 28px;
-  line-height: 28px;
+  height: 32px;
+  line-height: 32px;
   font-size: 14px;
   padding: 0 10px;
   border: 1px solid #aaa;
@@ -165,8 +150,8 @@ li {
   padding: 0 0 0 25px !important;
   border: none;
   box-shadow: none;
-  width: 160px;
-  height: 28px;
+  width: 202px;
+  height: 32px;
   line-height: normal;
   background-image: url("../images/sprite_login.png");
   background-repeat: no-repeat;
@@ -182,7 +167,7 @@ li {
   background-position: 0 -23px;
 }
 .banner .login-box .login-box-wrap .login-form input#authCode {
-  width: 90px;
+  width: 130px;
   background-position: 0 -23px;
   float: left;
   margin-right: 5px;
@@ -198,17 +183,17 @@ li {
   min-width: 40px;
   text-align: center;
   outline: none;
-  height: 34px;
-  line-height: 34px;
+  height: 36px;
+  line-height: 36px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .banner .login-box .login-box-wrap .login-form .login-button {
   background: #489cff;
   border: 1px solid #4b65bb;
   color: #fff;
-  width: 90px;
+  width: 110px;
   margin-right: 5px;
 }
 .banner .login-box .login-box-wrap .login-form .login-button:hover {
@@ -219,15 +204,14 @@ li {
   background: #ffffff;
   border: 1px solid #cccccc;
   color: #333;
-  width: 90px;
+  width: 110px;
 }
 .banner .login-box .login-box-wrap .login-form .register-button:hover {
   background-color: #f0f0f0;
 }
 .main .container {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   padding: 20px 0;
-  margin-bottom: 20px;
 }
 .main .main-bg {
   width: 100%;
@@ -252,7 +236,7 @@ li {
 .main .news .news-list li a {
   color: #333;
   font-size: 13px;
-  max-width: 300px;
+  max-width: 320px;
   margin-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -314,11 +298,21 @@ li {
 .main.page .main-right {
   width: 860px;
 }
+.main.page .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+}
 .main.list .main-left {
   width: 0;
 }
 .main.list .main-right {
   width: 860px;
+}
+.main.list .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
 }
 .article .article-title {
   text-align: center;
@@ -358,33 +352,77 @@ li {
   background-image: url(../images/news_tip.jpg);
   background-repeat: no-repeat;
 }
+.breadcrumb {
+  margin-bottom: -7px;
+}
 .breadcrumb ul li {
   float: left;
 }
 .breadcrumb ul li a {
-  color: #999;
-  font-size: 12px;
+  color: #094359;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Adobe Heiti Std";
 }
 .breadcrumb ul li a:hover {
   color: #203d53;
 }
-.refer {
-  margin-top: 30px;
-  padding: 20px 0;
-  text-align: center;
-  background: #f2f2f2 url('../images/link-list-bg.png') repeat-x;
-}
 .footer {
-  text-align: center;
-  background-color: #203d53;
-  padding: 20px 0;
+  background-color: #4e5c66;
+  padding: 20px 0 10px 0;
   position: relative;
-  color: #879bab;
+  color: #b8b8b9;
   font-size: 12px;
 }
-.footer .footer-refer {
-  margin-bottom: 10px;
+.footer .footer-depart {
+  float: left;
+  width: 300px;
+}
+.footer .footer-depart ul.depart-list {
+  width: 200px;
+}
+.footer .footer-depart ul.depart-list li {
+  font-size: 13px;
+  border-bottom: 2px solid #5c6870;
+}
+.footer .footer-depart ul.depart-list li strong {
+  font-family: "Adobe Heiti Std";
+  margin-right: 15px;
+  font-size: 14px;
+}
+.footer .footer-depart ul.depart-list li:last-child {
+  border-bottom: none;
+}
+.footer .footer-links {
+  float: right;
+  width: 450px;
+}
+.footer .footer-links .links-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 7px 0;
+  border-bottom: 2px solid #5c6870;
+}
+.footer .footer-links .links-list {
+  padding: 5px 0 ;
+}
+.footer .footer-links .links-list li {
+  float: left;
+}
+.footer .footer-links .links-list li a {
+  display: inline-block;
+  width: 120px;
+  font-size: 13px;
+  color: #b8b8b9;
+  padding: 5px 10px;
+}
+.footer .footer-links .links-list li a.long {
+  width: 180px;
 }
 .footer p {
   padding: 5px;
+}
+.footer .footer-info {
+  margin: 10px 0 0 0;
+  text-align: center;
 }
